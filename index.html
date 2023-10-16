@@ -3,10 +3,14 @@
   <head>
     <title>Creating and Inserting DOM Elements</title>
   </head>
-  <script type="application/javascript">
-  </script>
   <body>
-    <main id="main"></main>
+    <main id="main"></main> 
+    <script type="text/javascript">
+      document.getElementById("main").remove();
+      const newHeader = document.createElement('h1')
+      newHeader.id = 'victory'
+      newHeader.innerHTML = "YOUR-NAME is the champion"
+    </script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
